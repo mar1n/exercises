@@ -1,4 +1,4 @@
-const controller = superclass => 
+const authenticateMixin = superclass => 
     class extends superclass {
         signup() {}
         signin() {}
@@ -12,4 +12,4 @@ const controller = superclass =>
 }
 
 
-export default controller;
+export default authenticateMixin;

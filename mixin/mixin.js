@@ -1,14 +1,16 @@
-import controller from "./controller.mjs";
+import authenticateMixin from "./controller.mjs";
 
-class authenticate {
+class authenticateController extends authenticateMixin(Object) {
     constructor(name, password) {
+        super()
         this.name = name;
         this.password = password;
     }
 }
 
-class twoFA {
+class twoFAController extends authenticateMixin(Object) {
     constructor(name, password, phoneNumber) {
+        super()
         this.name = name;
         this.password = password;
         this.phoneNumber = phoneNumber;
@@ -19,11 +21,9 @@ class twoFA {
 
 }
 
-class myAuthenticate extends controller(authenticate) {}
-class myTwoFA extends controller(twoFA) {}
 
-const Authenticate = new myAuthenticate('Szymon', 'God');
-const TwoFA = new myTwoFA();
+const Authenticate = new authenticateController('Szymon', 'God');
+const TwoFA = new twoFAController();
 
 console.log(Authenticate.authenticate());
 console.log(TwoFA.sendMessage());
