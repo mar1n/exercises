@@ -49,7 +49,7 @@ class StyleFactory {
                 this.length++;
             } else {
                 console.log(
-                    `Error: ${fontName} does not implement the CoffeOrder interface.`
+                    `Error: ${fontName} does not implement the CharacterStyle interface.`
                 );
                 return null;
             }
@@ -81,6 +81,10 @@ function txtEditor() {
     addCharacter("b", "News Gothic", 7);
     addCharacter("a", "Courier", 12);
     addCharacter("f", "Lucida", 5);
+    addCharacter("g", "Lucida", 6);
+    addCharacter("g", "Lucida", 6);
+    addCharacter("g", "Lucida", 6);
+    addCharacter("g", "Lucida", 6);
     addCharacter("g", "Lucida", 6);
 
 
