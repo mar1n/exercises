@@ -1,3 +1,3 @@
-const Log = () => <p></p>;
+const Log = ({message}) => <p>{message}</p>;
 
 export default Log;

@@ -1,5 +1,5 @@
 import Button from "./button";
 
-const Addbutton = () => <Button>Add</Button>
+const Addbutton = ({namesfn}) => <button onClick={namesfn}>Add</button>
 
 export default Addbutton;
