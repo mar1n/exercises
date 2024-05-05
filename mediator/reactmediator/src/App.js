@@ -22,14 +22,14 @@ const App = () =>  {
     setName('')
   }
   const deleteName = (selectName) => {
-    setNames([...names].filter(name => name === selectName))
+    setNames([...names].filter(name => name !== selectName))
   }
   return (
     <div className="App">
       <Input namefn={Name} name={name} />
       <Addbutton namesfn={addName}/>
       <Deletebutton />
-      <Listofusers users={names} />
+      <Listofusers users={names} deleteUserfn={deleteName} />
       <Log />
     </div>
   );
