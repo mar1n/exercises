@@ -38,6 +38,7 @@ var Calculator = function () {
         execute: function (command) {
             current = command.execute(current, command.value);
             commands.push(command);
+            console.log("commands", commands);
             console.log(action(command) + ": " + command.value);
         },
 
@@ -71,3 +72,5 @@ function run() {
 
     console.log("\nValue: " + calculator.getCurrentValue());
 }
+
+run();
