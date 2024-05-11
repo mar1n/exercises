@@ -27,8 +27,3 @@ function createFrog(options) {
 }
 
 export default createFrog;
-
-const mikeTheFrog = createFrog({name: 'mike', sex: 'male', age: 1});
-const sallyTheOtherFrog = createFrog({name: 'sally', sex: 'famale', age: 4});
-const michelleTheLastFrog = createFrog({ name: 'michelle', sex: 'female', age: 10});
-
