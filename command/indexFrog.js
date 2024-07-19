@@ -96,6 +96,11 @@ frogsManger.execute(new FeedFrogsCommand(new Food('fly', 'insect', 1)));
 frogsManger.execute(new AddFrogCommand(sallyTheFrog));
 frogsManger.execute(new SaveCommand());
 
+frogsManager
+      .feedFrogs(fly)
+      .feedFrogs(mosquito)
+      .save()
+
 const updatedFrogs = frogsManger.execute(new GetFrogsCommand());
 
 // const fly = new Food("fly", "insect", 1.5);
